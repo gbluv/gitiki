@@ -1,0 +1,51 @@
+/* Main sidebar panel */
+.ag-tool-panel-wrapper .ag-column-panel {
+  display: grid;
+  grid-template-columns: minmax(320px, 1.15fr) minmax(300px, 0.95fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  height: 100%;
+  overflow: hidden;
+  align-items: start;
+}
+
+/* Reset Pivot / Pivot Mode strip */
+.ag-tool-panel-wrapper .ag-column-panel .ag-pivot-mode-panel {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* Left selector */
+.ag-tool-panel-wrapper .ag-column-panel .ag-column-select.ag-column-panel-column-select {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  overflow: auto;
+  min-width: 0;
+  border-right: 1px solid #d9d9d9;
+}
+
+/* Right buckets */
+.ag-tool-panel-wrapper .ag-column-panel .ag-column-drop-rowgroup {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.ag-tool-panel-wrapper .ag-column-panel .ag-column-drop-values {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.ag-tool-panel-wrapper .ag-column-panel .ag-column-drop-pivot {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+/* Bucket styling cleanup */
+.ag-tool-panel-wrapper .ag-column-panel .ag-column-drop.ag-column-drop-vertical {
+  margin: 0;
+  min-width: 0;
+}
+
+.ag-tool-panel-wrapper .ag-column-panel .ag-column-drop-list.ag-column-drop-vertical-list {
+  min-height: 80px;
+}
