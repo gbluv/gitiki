@@ -1,5 +1,6 @@
 When a user expands groups in SSRM pivot tables, the grid requests only a slice of the hierarchy, but sorting requires knowledge of the entire aggregated dataset, forcing the server to recompute sorted pivot results repeatedly for each expansion.
 
+**Possible Issues to waatch out for**
 
 1. Sorting may appear inconsistent when users expand rows.
 The table only loads small portions of the data at a time, so when a user sorts the pivot table, the system may not yet know about all the other rows that exist. As a result, the order may look correct at first but change when more rows are expanded. This can confuse users because the table may appear to “re-sort” itself as they drill deeper.
